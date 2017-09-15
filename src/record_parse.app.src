@@ -1,0 +1,8 @@
+{application, record_parse, [
+    {description,  "Erlang records parser for json"},
+    {vsn,          "0.8"},
+    {applications, [kernel, stdlib]},
+    {modules, [erlang_parse]},
+    {registered,   []},
+    {env, []}
+]}.
