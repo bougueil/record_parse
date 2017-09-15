@@ -25,7 +25,7 @@ parse_transform(Forms, _Options) ->
     Forms5 = generate({to_json, 1}, export, RecordsFields, Forms4),
     Forms6 = generate({to_json1, 1}, noexport, RecordsFields, Forms5),
     Forms7 = generate({to_json2, 1}, noexport, RecordsFields, Forms6),
-    io:fwrite("----------~n~s~n", [erl_prettypr:format(erl_syntax:form_list(Forms7),[{paper, 140},{ribbon, 100}])]),
+    %% io:fwrite("----------~n~s~n", [erl_prettypr:format(erl_syntax:form_list(Forms7),[{paper, 140},{ribbon, 100}])]),
     Forms7.
 
 parse_record([], Acc) ->
