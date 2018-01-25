@@ -1,10 +1,10 @@
 
-record_parse: typed json for erlang records 
+record_parse: typed json for erlang records AST
 =====================================================
 
 Feature
 -------
-typed JSON from erlang records is achieved with parse_transform code generation for tuple transformations.
+AST transformation between typed JSON and erlang records.
 
 Usage
 -----
